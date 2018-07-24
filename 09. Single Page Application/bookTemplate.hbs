@@ -1,0 +1,11 @@
+<tr>
+    <td id="{{bookId}}">{{title}}</td>
+    <td>{{author}}</td>
+    <td>{{description}}</td>
+    <td>
+        {{#if id}}
+        <a href="#" onclick="deleteBook($(this).parent().parent())" class="btn btn-danger">Delete</a>
+        <a href="#" onclick="loadBookForEdit($(this).parent().parent())" class="btn btn-warning edit">Edit</a>
+        {{/if}}
+    </td>
+</tr>

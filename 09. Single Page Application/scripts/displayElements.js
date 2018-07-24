@@ -18,7 +18,7 @@ function showHideMenuLinks() {
         $("#linkListBooks").show()
         $("#linkCreateBook").show()
         $("#linkLogout").show()
-        $('#loggedInUser').text("Welcome, " + sessionStorage.getItem('username') + "!")
+        $('#loggedInUser').text("Welcome, " + sessionStorage.getItem('username') + "!");
     }
 }
 

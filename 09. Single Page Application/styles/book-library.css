@@ -10,7 +10,7 @@ body {
 #menu {
 	font-size: 1.5em;
 	background: #999;
-	padding: 5px;
+	padding: 17px;
 	line-height: 1.5;
 	border-radius: 3px;
     overflow: auto;
@@ -18,8 +18,7 @@ body {
 
 #menu a {
 	text-decoration: none;
-	padding: 5px 10px;
-	border-radius: 5px;
+	padding: 22px 17px;
 	color: #fff;
 }
 
@@ -63,6 +62,13 @@ section h1 {
 	border-top-right-radius: 10px;
 }
 
+table{
+	border: 1px solid black;
+}
+.log-reg{
+	margin-top: 1em;
+}
+
 table th {
     background: #DDD;
     padding: 10px;
@@ -103,13 +109,20 @@ table td {
 #errorBox {
 	background: #F50;
 }
+.edit{
+	width: 65px;
+	margin-top: 1em;
+}
 
 footer {
 	background: #DDD;
 	padding: 5px 10px;
-	font-size: 0.8em;
+	font-size: 1.5em;
 	text-align: center;
 	border-radius: 3px;
+}
+i{
+	float: right;
 }
 
 .homeImage > img {

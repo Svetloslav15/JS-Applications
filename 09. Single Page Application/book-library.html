@@ -11,6 +11,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles/pagination.css"/>
 		<link rel="stylesheet" type="text/css" href="styles/book-library.css" />
+		<script src="handlebars-v4.0.11%20(1).js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	</head>
 	
     <body onload="startApp()">
@@ -21,7 +25,7 @@
             <a href="#" id="linkListBooks">List Books</a>
             <a href="#" id="linkCreateBook">Create Book</a>
             <a href="#" id="linkLogout">Logout</a>
-            <span id="loggedInUser"></span>
+			<span id="loggedInUser"></span>
         </header>
 
         <main>
@@ -49,7 +53,7 @@
 						<div><input type="text" name="username" required /></div>
 						<div>Password:</div>
 						<div><input type="password" name="passwd" required /></div>
-						<div><input type="submit" value="Login" /></div>
+						<div><input type="submit" value="Login" class="btn btn-primary log-reg"/></div>
 					</form>
 				</div>
             </section>
@@ -62,7 +66,7 @@
 						<div><input type="text" name="username" required /></div>
 						<div>Password:</div>
 						<div><input type="password" name="passwd" required /></div>
-						<div><input type="submit" value="Register" /></div>
+						<div><input type="submit" value="Register" class="btn btn-primary log-reg"/></div>
 					</form>
 				</div>
             </section>
@@ -71,7 +75,7 @@
                 <h1>Books</h1>
 				<div class="content">
 					<div id="books">
-						<table>
+						<table class="col-md-12">
 							<tr>
 								<th>Title</th>
 								<th>Author</th>
@@ -83,8 +87,8 @@
 								<td>Book author</td>
 								<td>Book description</td>
 								<td>
-									<a href="#">[Delete]</a>
-									<a href="#">[Edit]</a>
+									<a href="#">Delete</a>
+									<a href="#">Edit</a>
 								</td>
 							</tr>
 							<tr>
@@ -117,7 +121,7 @@
 						<div><input type="text" name="author" required /></div>
 						<div>Description:</div>
 						<div><textarea name="description" rows="10" required></textarea></div>
-						<div><input type="submit" value="Create" /></div>
+						<div><input type="submit" value="Create" class="btn btn-primary"/></div>
 					</form>
 				</div>
             </section>
@@ -128,12 +132,12 @@
 					<form id="formEditBook">
 						<div><input type="hidden" name="id" required /></div>
 						<div>Title:</div>
-						<div><input type="text" name="title" required /></div>
+						<div><input type="text" name="title" required/></div>
 						<div>Author:</div>
 						<div><input type="text" name="author" required /></div>
 						<div>Description:</div>
 						<div><textarea name="description" rows="10" required></textarea></div>
-						<div><input type="submit" value="Edit" /></div>
+						<div><input type="submit" value="Edit" class="btn btn-primary" /></div>
 					</form>
 				</div>
             </section>
