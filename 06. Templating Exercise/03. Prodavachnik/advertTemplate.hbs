@@ -1,0 +1,14 @@
+<tr data-advertId="{{advertId}}" data-authorId="{{authorId}}">
+    <td>{{title}}</td>
+    <td>{{publisher}}</td>
+    <td>{{description}}</td>
+    <td>{{price}}</td>
+    <td>{{dateOfPublishing}}</td>
+    <td>
+        {{#if userId}}
+            <a href="#" onclick="deleteAd($(this).parent().parent())" class="btn btn-danger">Delete</a>
+            <a href="#" onclick="loadAdvertToEdit($(this).parent().parent())" class="btn btn-primary">Edit</a>
+        {{/if}}
+        <a href="#" onclick="readMore($($(this).parent().parent()).attr('data-advertId'))" class="btn btn-info">Read more</a>
+    </td>
+</tr>

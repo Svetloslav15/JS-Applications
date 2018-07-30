@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="737b085f-fae6-49fd-a8ef-5c412f8f95e9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/10. SIngle Page Application Exercise/handlebars-v4.0.11 (1).js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/attachAllEvents.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/crudOperations.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/displayElements.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/06. Templating Exercise/01. List Towns/handlebars-v4.0.11 (1).js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/06. Templating Exercise/01. List Towns/listtown.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/handlebars-v4.0.11 (1).js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/05. Templating/.idea/05. Templating.iml" afterPath="$PROJECT_DIR$/05. Templating/.idea/05. Templating.iml" />
+      <change beforePath="$PROJECT_DIR$/05. Templating/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/05. Templating/.idea/jsLibraryMappings.xml" />
+      <change beforePath="$PROJECT_DIR$/05. Templating/.idea/workspace.xml" afterPath="$PROJECT_DIR$/05. Templating/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/05. Templating/app.js" afterPath="$PROJECT_DIR$/05. Templating/app.js" />
+      <change beforePath="$PROJECT_DIR$/05. Templating/node_modules/handlebars/package.json" afterPath="$PROJECT_DIR$/05. Templating/node_modules/handlebars/package.json" />
+      <change beforePath="$PROJECT_DIR$/10. SIngle Page Application Exercise/.idea/workspace.xml" afterPath="$PROJECT_DIR$/10. SIngle Page Application Exercise/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/demo/demo.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/demo/solution.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/demo/style.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,41 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="displayElements.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/displayElements.js">
+      <file leaf-file-name="towns.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06. Templating Exercise/01. List Towns/towns.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/index.html">
+      <file leaf-file-name="listtown.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06. Templating Exercise/01. List Towns/listtown.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crudOperations.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/crudOperations.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attachAllEvents.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/attachAllEvents.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -66,8 +54,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -122,6 +110,15 @@
         <option value="$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/prodavachnik.js" />
         <option value="$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/attachAllEvents.js" />
         <option value="$PROJECT_DIR$/10. SIngle Page Application Exercise/index.html" />
+        <option value="$PROJECT_DIR$/demo/solution.js" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/catSeeder.js" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/template.hbs" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/templateH.hbs" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/cats.html" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/template.js" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/01. List Towns/listtown.html" />
+        <option value="$PROJECT_DIR$/06. Templating Exercise/01. List Towns/towns.js" />
       </list>
     </option>
   </component>
@@ -139,6 +136,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/05. Templating/node_modules" />
+    <handled-path value="$PROJECT_DIR$/07. JS Routing/node_modules" />
+    <handled-path value="$PROJECT_DIR$/Exam Prep/Chirper-Resources/node_modules" />
+    <handled-path value="$PROJECT_DIR$/demo/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -179,8 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,7 +189,19 @@
             <path>
               <item name="03.JavaScript-Application" type="b2602c69:ProjectViewProjectNode" />
               <item name="03.JavaScript-Application" type="462c0819:PsiDirectoryNode" />
-              <item name="09. Single Page Application" type="462c0819:PsiDirectoryNode" />
+              <item name="06. Templating Exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="03.JavaScript-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="03.JavaScript-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="06. Templating Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="01. List Towns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="03.JavaScript-Application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="03.JavaScript-Application" type="462c0819:PsiDirectoryNode" />
+              <item name="06. Templating Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="02. HTTP Cats" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="03.JavaScript-Application" type="b2602c69:ProjectViewProjectNode" />
@@ -208,6 +218,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,18 +227,20 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/10. SIngle Page Application Exercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../04. Front-End-Development/02. JavaScript-for-Front-End" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Softuni\03. JS-Core\03. JavaScript-Applications\demo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Softuni\03. JS-Core\03.JavaScript-Application\06. Templating Exercise\01. List Towns" />
+      <recent name="D:\Softuni\03. JS-Core\03.JavaScript-Application\06. Templating Exercise\02. HTTP Cats" />
       <recent name="D:\Softuni\03. JS-Core\03.JavaScript-Application\10. SIngle Page Application Exercise" />
       <recent name="D:\Softuni\03. JS-Core\03.JavaScript-Application\09. Single Page Application" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Softuni\03. JS-Core\03. JavaScript-Applications\demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,11 +255,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/07. JS Routing" />
     <configuration name="demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="demo.js" working-dir="$PROJECT_DIR$" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.demo.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.demo.js" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.demo.js" />
       </list>
     </recent_temporary>
   </component>
@@ -277,25 +297,33 @@
       <workItem from="1532425592931" duration="20490000" />
       <workItem from="1532504367757" duration="9701000" />
       <workItem from="1532522879499" duration="47000" />
+      <workItem from="1532722328922" duration="625000" />
+      <workItem from="1532770139497" duration="219000" />
+      <workItem from="1532851604472" duration="118000" />
+      <workItem from="1532863058043" duration="56000" />
+      <workItem from="1532937107394" duration="20000" />
+      <workItem from="1532937136122" duration="117000" />
+      <workItem from="1532947429395" duration="2383000" />
+      <workItem from="1532961190720" duration="2545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84031000" />
+    <option name="totallyTimeSpent" value="90114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17336309" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20684524" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -316,97 +344,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/solution.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="111" lean-forward="false" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/solution.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/solution.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. AJAX and jQuery Ajax/01. XHR.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. AJAX and jQuery Ajax/02. AJAX Load.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. AJAX and jQuery Ajax/text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01. AJAX and jQuery Ajax/03. Github Repo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
@@ -569,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09. Single Page Application/bookTemplate.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="100" lean-forward="false" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09. Single Page Application/scripts/displayElements.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -608,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1717">
           <caret line="108" column="17" lean-forward="true" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,15 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/attachAllEvents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,23 +552,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/handlebars-v4.0.11 (1).js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/handlebars-v4.0.11 (1).js" />
     <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/prodavachnik.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,22 +567,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/index.html">
+    <entry file="file://$PROJECT_DIR$/09. Single Page Application/bookTemplate.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding />
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/crudOperations.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/scripts/attachAllEvents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07. JS Routing/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07. JS Routing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.html" />
+    <entry file="file://$PROJECT_DIR$/demo/solution.js" />
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/templateH.hbs" />
+    <entry file="file://$PROJECT_DIR$/10. SIngle Page Application Exercise/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/handlebars-v4.0.11 (1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/catSeeder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/cats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/01. List Towns/handlebars-v4.0.11 (1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/02. HTTP Cats/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/01. List Towns/towns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06. Templating Exercise/01. List Towns/listtown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>

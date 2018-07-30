@@ -1,7 +1,7 @@
 $(() => {
 
-    let details
-    let data
+    let details;
+    let data;
 
     async function loadFiles() {
         let contacts = await $.get('templates/contacts.html')
