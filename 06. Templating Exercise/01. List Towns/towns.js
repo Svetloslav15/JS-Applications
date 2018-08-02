@@ -2,7 +2,6 @@ function attachEvents() {
     $('#btnLoadTowns').on("click", function () {
         let towns = $('#towns').val();
         towns = towns.split(', ').map(x => ({name: x}));
-        console.log(towns);
         renderTowns(towns);
     });
 

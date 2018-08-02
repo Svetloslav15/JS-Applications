@@ -1,14 +1,19 @@
 <section id="welcome">
     <div class="container centered">
-        {{> header}}
-        {{> navigation}}
-
-        {{#if isAuth}}
-            {{> contactPage}}
-           {{else}}
-            {{> loginForm}}
-        {{/if}}
-
-        {{> footer}}
+        <div class="box">
+            <h1>Sign in</h1>
+            <div class="content">
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <input id="username" type="text">
+                    <label for="password">Password</label>
+                    <input id="password" type="password">
+                    <input type="submit" value="Login">
+                </form>
+                <div class="centered">
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

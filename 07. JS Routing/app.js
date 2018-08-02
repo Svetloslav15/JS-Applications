@@ -1,49 +1,27 @@
-const handlers = {};
-
 $(() => {
     const app = Sammy('#main', function () {
-        this.use('Handlebars', 'hbs');
+       this.use("Handlebars", 'hbs');
 
-        this.get('#/index.html', handlers.homeHandler);
-
-        this.get('#/register', (ctx) => {
-            ctx.loadPartials({
-                header: './templates/common/header.hbs',
-                navigation: './templates/common/navigation.hbs',
-                footer: './templates/common/footer.hbs',
-            }).then(function () {
-                this.partial('./templates/forms/registerForm.hbs')
-            });
+        this.get('#/login', function () {
+           this.partial('./templates/welcome.hbs');
         });
 
-        this.post('#/register', (ctx) => {
-            let username = ctx.params.username;
-            let password = ctx.params.pass;
-            let repeatPass = ctx.params.repeatPass;
-
-            if (password !== repeatPass) {
-                alert('Passwords do not match');
-            } else {
-                auth.register(username, password);
-                ctx.redirect('#/index.html');
-            }
+        this.get('#/register', function () {
+            this.partial('./templates/register.hbs');
         });
 
-        this.post('#/login', (ctx) => {
-            let username = ctx.params.username;
-            let password = ctx.params.pass;
+        this.post('#/register', function () {
 
-            auth.login(username, password)
-                .then((userData) => {
-                    auth.saveSession(userData);
-                    ctx.redirect('#/index.html');
-                })
-                .catch(console.error);
         });
 
+        this.get('#/contacts', function () {
+            this.partial('./templates/contacts.hbs');
+        });
+
+        this.get('#/profile', function () {
+            this.partial('./templates/profile.hbs');
+        });
     });
-
-
 
     app.run();
 });
