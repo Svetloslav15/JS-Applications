@@ -1,11 +1,12 @@
 {{> header}}
-
 <div class="content">
     {{> navigation}}
-
     <section id="viewCatalog">
-        {{> postList}}
+        <div class="posts">
+            {{#each posts}}
+                {{> post}}
+            {{/each}}
+        </div>
     </section>
 </div>
-
 {{> footer}}
