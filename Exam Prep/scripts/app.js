@@ -60,6 +60,7 @@ $(() => {
             }
             else {
                 notify.showError("Invalid credentials");
+                context.redirect('#/login');
             }
         });
 

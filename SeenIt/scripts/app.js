@@ -149,7 +149,8 @@ $(() => {
         });
 
         this.post('#/edit/post', function (context) {
-            let id = context.params.postId.slice(1);
+            let id = context.params.postId;
+            console.log(id);
             let object = {
                 author: sessionStorage.getItem('username'),
                 url: context.params.url,

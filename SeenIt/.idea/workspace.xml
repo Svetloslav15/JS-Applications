@@ -17,28 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/notifications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentsServise.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/commentsServise.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="96">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -47,8 +27,8 @@
       <file leaf-file-name="postService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/postService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +37,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="248" column="59" lean-forward="false" selection-start-line="248" selection-start-column="59" selection-end-line="248" selection-end-column="59" />
+            <state relative-caret-position="257">
+              <caret line="152" column="28" lean-forward="false" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
               <folding>
                 <element signature="e#143#321#0" expanded="false" />
                 <element signature="e#364#633#0" expanded="false" />
@@ -69,9 +49,10 @@
                 <element signature="e#3736#4190#0" expanded="false" />
                 <element signature="e#4247#5202#0" expanded="false" />
                 <element signature="e#5261#5967#0" expanded="false" />
-                <element signature="e#6669#6947#0" expanded="false" />
-                <element signature="e#7000#8130#0" expanded="false" />
-                <element signature="e#8192#9525#0" expanded="false" />
+                <element signature="e#6689#6967#0" expanded="false" />
+                <element signature="e#7020#8150#0" expanded="false" />
+                <element signature="e#8212#9545#0" expanded="false" />
+                <element signature="e#9606#10423#0" expanded="false" />
                 <element signature="n#!!block;n#calcTime#0" expanded="false" />
               </folding>
             </state>
@@ -81,7 +62,7 @@
       <file leaf-file-name="remote.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/remote.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
+            <state relative-caret-position="136">
               <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
@@ -184,7 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +193,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +201,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exam Prep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
@@ -256,11 +237,12 @@
       <workItem from="1533391208261" duration="1885000" />
       <workItem from="1533455865198" duration="21000" />
       <workItem from="1533552776546" duration="2092000" />
+      <workItem from="1533556580090" duration="1176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18468000" />
+    <option name="totallyTimeSpent" value="19644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -269,13 +251,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -293,14 +275,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/scripts/app.js</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
@@ -336,9 +310,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -388,9 +363,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -454,9 +430,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -526,9 +503,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -571,9 +549,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -616,9 +595,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -719,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/remote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
+        <state relative-caret-position="136">
           <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
         </state>
@@ -733,19 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/postService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/common/commentView.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="143" lean-forward="false" selection-start-line="3" selection-start-column="143" selection-end-line="3" selection-end-column="143" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,10 +728,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/postService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="248" column="59" lean-forward="false" selection-start-line="248" selection-start-column="59" selection-end-line="248" selection-end-column="59" />
+        <state relative-caret-position="257">
+          <caret line="152" column="28" lean-forward="false" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
           <folding>
             <element signature="e#143#321#0" expanded="false" />
             <element signature="e#364#633#0" expanded="false" />
@@ -771,9 +750,10 @@
             <element signature="e#3736#4190#0" expanded="false" />
             <element signature="e#4247#5202#0" expanded="false" />
             <element signature="e#5261#5967#0" expanded="false" />
-            <element signature="e#6669#6947#0" expanded="false" />
-            <element signature="e#7000#8130#0" expanded="false" />
-            <element signature="e#8192#9525#0" expanded="false" />
+            <element signature="e#6689#6967#0" expanded="false" />
+            <element signature="e#7020#8150#0" expanded="false" />
+            <element signature="e#8212#9545#0" expanded="false" />
+            <element signature="e#9606#10423#0" expanded="false" />
             <element signature="n#!!block;n#calcTime#0" expanded="false" />
           </folding>
         </state>
@@ -781,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="96">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding />
         </state>
       </provider>
