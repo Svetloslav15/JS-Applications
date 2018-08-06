@@ -230,19 +230,24 @@ $(() => {
 
         this.post('#/create/comment', function (context) {
             let postId = context.params.postId;
-            console.log(postId);
             let content = context.params.content;
-            let object = {
-                content: content,
-                author: sessionStorage.getItem("username"),
-                postId: postId
-            };
-            comments.createComment(object)
-                .then(function (res) {
-                    console.log(res);
-                    notify.showInfo("Comment created.");
-                    context.redirect(`#/details/post/:${postId}`);
-                }).catch(notify.handleError);
+            if (content !== "") {
+                let object = {
+                    content: content,
+                    author: sessionStorage.getItem("username"),
+                    postId: postId
+                };
+                comments.createComment(object)
+                    .then(function (res) {
+                        console.log(res);
+                        notify.showInfo("Comment created.");
+                        context.redirect(`#/details/post/:${postId}`);
+                    }).catch(notify.handleError);
+            }
+            else{
+                notify.showError("Cannot post empty comment!");
+                context.redirect(`#/details/post/:${postId}`);
+            }
         });
 
         this.get('#/comment/delete/:commentId/post/:postId', function (context) {
