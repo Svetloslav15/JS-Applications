@@ -1,255 +1,206 @@
 $(() => {
-    const app = Sammy('#container', function () {
-        this.use('Handlebars', "hbs");
+    const app = Sammy("#container", function () {
+        this.use("Handlebars", "hbs");
 
-        //Main file
-        this.get('index.html', function (context) {
-            if (auth.isAuthed()) {
-                context.redirect('#/home');
+        this.get("index.html", function () {
+           if (auth.isAuthed()){
+               this.redirect("#/home");
+           }
+           else{
+               this.redirect("#/welcome");
+           }
+        });
+
+        this.get("#/welcome", function () {
+            this.loadPartials({
+                footer: "./templates/footer.hbs",
+            }).then(function () {
+                this.partial("./templates/register-login.hbs");
+            });
+        });
+
+        this.post('#/register', function (context) {
+            let username = context.params["username-register"];
+            let password = context.params["password-register"];
+            let repeatPass = context.params["password-register-check"];
+            if (username.length >= 3 && password === repeatPass &&
+                username.match(/^[a-zA-Z]+$/) && password.length >= 6 &&
+                password.match(/^[a-zA-Z0-9]+$/)) {
+                auth.register(username, password)
+                    .then(function (res) {
+                        auth.saveSession(res);
+                        context.redirect('#/home');
+                        notify.showInfo("Successfully registered!");
+                    }).catch(notify.handleError);
             }
             else {
+                notify.showError("Invalid credentials!");
                 context.redirect('#/welcome');
             }
         });
 
-        //Welcome Page
-        this.get('#/welcome', function () {
-            this.loadPartials({
-                footer: './templates/footer.hbs'
-            }).then(function () {
-                this.partial('./templates/welcome.hbs');
-            }).catch(notify.handleError);
-        });
-
-        //Register
-        this.post('#/register', function (context) {
-            let username = context.params["username-register"];
-            let password = context.params["password-register"];
-            let checkedPass = context.params["password-register-check"];
-            if (username.length >= 5 && password !== "" &&
-                checkedPass !== "" && password == checkedPass) {
-                auth.register(username, password)
-                    .then(function (res) {
-                        console.log(res);
-                        auth.saveSession(res);
-                        notify.showInfo('Successfully registered!');
+        this.post('#/login', function (context) {
+            let username = context.params["username-login"];
+            let password = context.params["password-login"];
+            if (username.length >= 3 && username.match(/^[a-zA-Z]+$/) && password.length >= 6 &&
+                password.match(/^[a-zA-Z0-9]+$/)) {
+                auth.login(username, password)
+                    .then(function (data) {
+                        auth.saveSession(data);
+                        notify.showInfo("Successfully login!");
                         context.redirect('#/home');
                     }).catch(notify.handleError);
             }
             else {
-                notify.showError('Invalid credentials, please try again!');
-                this.redirect('#/register');
+                notify.showError("Invalid credentials!");
+                context.redirect('#/welcome');
             }
         });
 
-        //Login
-        this.post('#/login', function (context) {
-            let username = context.params["username-login"];
-            let password = context.params["password-login"];
-            if (username !== "" && password !== "") {
-                auth.login(username, password)
-                    .then(function (res) {
-                        auth.saveSession(res);
-                        notify.showInfo('Successfully login!');
-                        context.redirect('#/home');
-                    }).catch(notify.handleError)
-            }
-            else {
-                notify.showError("Invalid credentials");
-            }
-        });
-
-        //Home Page
-        this.get('#/home', function (context) {
-            $.get({
-                method: "GET",
-                url: `${remote.baseUrl}appdata/${remote.appKey}/receipts?query={"active":"true"}`,
-                headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-            }).then(function (resFirst) {
-                let receiptid = resFirst[0]._id;
-                $.ajax({
-                    method: "GET",
-                    url: `${remote.baseUrl}appdata/${remote.appKey}/entries?query={"receiptId":"${receiptid}"}`,
-                    headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-                }).then(function (res) {
-                    let totalSumCurrent = 0;
-                    for (let item of res) {
-                        totalSumCurrent += Number(item.total);
-                    }
-                    context.totalP = totalSumCurrent;
-                    context.username = sessionStorage.getItem("username");
-                    context.products = res;
-                    context.productsCount = res.length;
-                    context._id = receiptid;
-                    context.loadPartials({
-                        footer: "./templates/footer.hbs",
-                        navigation: "./templates/navigation.hbs",
-                        receiptRow: './templates/createReceiptRow.hbs'
-                    }).then(function () {
-                        this.partial('./templates/createReceipt.hbs');
-                    });
-                })
-            }).catch(notify.handleError)
-        });
-
-        //Logout
         this.get('#/logout', function (context) {
             auth.logout()
                 .then(function () {
                     sessionStorage.clear();
+                    notify.showInfo("Logout successfully!");
                     context.redirect('#/welcome');
-                    notify.showInfo('Successfully logout!');
                 }).catch(notify.handleError);
         });
-
-        //Delete Entry
-        this.get('#/delete:id', function (context) {
-            let entryId = context.params.id.slice(1);
-            $.ajax({
-                method: "DELETE",
-                url: remote.baseUrl + 'appdata/' + remote.appKey + '/entries/' + entryId,
-                headers: {Authorization: 'Kinvey ' + sessionStorage.getItem('authtoken')},
-            }).then(function () {
-                let currentAllSum = 0;
-                let subtotals = $('.totalSumProduct');
-                for (let item of subtotals) {
-                    currentAllSum += $(item).text();
-                }
-                console.log(currentAllSum);
-                notify.showInfo("Entry removed");
-                context.redirect('#/home');
-            }).catch(notify.handleError);
-        });
-
-        //Create Entry
-        this.post('#/createEntry', function (context) {
-            let object = {
-                type: context.params.type,
-                quantity: context.params.qty,
-                pricePerUnit: context.params.price,
-                receiptId: context.params.receiptId
-            };
-            if (object.type !== "" && object.quantity !== "" && object.pricePerUnit !== "") {
-                object.total = object.quantity * object.pricePerUnit;
-                $.ajax({
-                    method: "POST",
-                    url: remote.baseUrl + 'appdata/' + remote.appKey + '/entries',
-                    data: JSON.stringify(object),
-                    headers: {
-                        Authorization: 'Kinvey ' + sessionStorage.getItem('authtoken'),
-                        "Content-Type": "application/json"
-                    },
-                }).then(function () {
-                    let totalSumCurrent = object.total;
-                    let divs = $('.totalSumProduct');
-                    for (let div of divs) {
-                        totalSumCurrent += Number($(div).text());
+        
+        this.get("#/home", function (context) {
+            context.username = sessionStorage.getItem("username");
+            service.getActiveReceipt()
+                .then(function (data) {
+                    if (data.length === 0){
+                        service.createReceipt()
+                            .then(function (data) {
+                                console.log(data);
+                                context.receiptId = data._id;
+                                service.getEntriesByReceiptId(data._id)
+                                    .then(function (res) {
+                                        let currentTotal = 0;
+                                        for (let key of res) {
+                                            currentTotal += Number(key.total);
+                                        }
+                                        context.totalP = currentTotal;
+                                        context.productCount = res.length;
+                                        context.entries = res;
+                                        context.loadPartials({
+                                            header: "./templates/header.hbs",
+                                            footer: "./templates/footer.hbs",
+                                            entry: "./templates/homeProductView.hbs"
+                                        }).then(function () {
+                                            this.partial("./templates/homeView.hbs");
+                                        })
+                                    }).catch(notify.handleError);
+                            }).catch(notify.handleError);
                     }
-                    context.redirect('#/home', totalSumCurrent);
-                    $('#totalSum').text(totalSumCurrent);
-                    notify.showInfo('Created entry!');
+                    else{
+                        context.receiptId = data[0]._id;
+                        context.productCount = data[0].productCount;
+                        service.getEntriesByReceiptId(data[0]._id)
+                            .then(function (res) {
+                                context.entries = res;
+                                let currentTotal = 0;
+                                for (let key of res) {
+                                    currentTotal += Number(key.total);
+                                }
+                                context.totalP = currentTotal;
+                                context.productCount = res.length;
+                                context.loadPartials({
+                                    header: "./templates/header.hbs",
+                                    footer: "./templates/footer.hbs",
+                                    entry: "./templates/homeProductView.hbs"
+                                }).then(function () {
+                                    this.partial("./templates/homeView.hbs");
+                                })
+                            }).catch(notify.handleError);
+                    }
                 }).catch(notify.handleError);
-            }
-            else {
-                notify.showError("Invalid credentials!");
-            }
         });
 
-        //Overview
-        this.get('#/allReceipts', function (context) {
-            $.get({
-                method: "GET",
-                url: `${remote.baseUrl}appdata/${remote.appKey}/receipts?query={"_acl.creator":"${sessionStorage.getItem("id")}","active":"false"}`,
-                headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-            }).then(function (res) {
-                let receiptSumAll = 0;
-                for (let receipt of res) {
-                    receiptSumAll += Number(receipt.total);
-                }
-                context.receiptSumAll = receiptSumAll;
-                context.receipts = res;
-                context.loadPartials({
-                    footer: './templates/footer.hbs',
-                    navigation: "./templates/navigation.hbs",
-                    receipt: "./templates/allReceipts-receipt.hbs"
-                }).then(function () {
-                    this.partial('./templates/allReceipts.hbs');
-                });
-            })
-        });
-
-        //Checkout
-        this.post('#/checkout', function (context) {
-            let id = context.params.receiptId;
-            let productsCount = context.params.productsCount;
-            console.log(productsCount);
-            let total = context.params.total;
-            $.get({
-                method: "GET",
-                url: `${remote.baseUrl}appdata/${remote.appKey}/receipts/${id}`,
-                headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-            }).then(function (res) {
-                res.active = "false";
-                res.productsCount = productsCount;
-                res.total = total;
-                $.get({
-                    method: "PUT",
-                    data: JSON.stringify(res),
-                    url: `${remote.baseUrl}appdata/${remote.appKey}/receipts/${id}`,
-                    headers: {
-                        "Authorization": "Kinvey " + sessionStorage.getItem("authtoken"),
-                        "Content-Type": "application/json"
-                    },
-                }).then(function () {
-                    let obj = {
-                        active: "true",
-                        productsCount: 0,
-                        total: 0,
-                        creatorId: sessionStorage.getItem("id"),
-                        creationDate: getToday()
-                    };
-                    $.ajax({
-                        method: "POST",
-                        data: JSON.stringify(obj),
-                        url: `${remote.baseUrl}appdata/${remote.appKey}/receipts`,
-                        headers: {
-                            "Authorization": "Kinvey " + sessionStorage.getItem("authtoken"),
-                            "Content-Type": "application/json"
-                        }
-                    }).then(function () {
-                        notify.showInfo('Receipt checked out!');
-                        context.redirect('#/home');
-                    });
-                });
-            });
-        });
-
-        //Receipt Details
-        this.get('#/details:index', function (context) {
-            let index = context.params.index.slice(1);
-            $.get({
-                method: "GET",
-                url: `${remote.baseUrl}appdata/${remote.appKey}/receipts?query={"_acl.creator":"${sessionStorage.getItem("id")}","active":"false"}`,
-                headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-            }).then(function (res) {
-                let receiptId = res[index]._id;
-                $.ajax({
-                    method: "GET",
-                    url: `${remote.baseUrl}appdata/${remote.appKey}/entries?query={"receiptId":"${receiptId}"}`,
-                    headers: {"Authorization": "Kinvey " + sessionStorage.getItem("authtoken")},
-                }).then(function (innerRes) {
-                    context.productsDetails = innerRes;
-                    context.loadPartials({
-                        footer: './templates/footer.hbs',
-                        navigation: "./templates/navigation.hbs",
-                        productDetails: './templates/productDetails.hbs'
-                    }).then(function () {
-                        this.partial('./templates/receiptDetails.hbs');
-                    });
+        this.post("#/createEntry/:id", function (context) {
+            let receiptId = context.params.id.slice(1);
+            let quantity = context.params.qty;
+            let type = context.params.type;
+            let pricePerUnit = context.params.price;
+            let total = quantity * pricePerUnit;
+            service.createEntry({receiptId, quantity, type, pricePerUnit, total})
+                .then(function () {
+                    notify.showInfo("Product added successfully!");
+                    context.redirect("#/home");
                 })
-            })
+        });
+
+        this.get('#/deleteEntry/:id', function (context) {
+            let id = context.params.id.slice(1);
+            service.deleteEntryById(id)
+                .then(function () {
+                    notify.showInfo("Entry deleted successfully!");
+                    context.redirect("#/home");
+                }).catch(notify.handleError);
+        });
+
+        this.post("#/checkout", function (context) {
+            let id = context.params.receiptId;
+            if (context.params.productCount > 0) {
+                let data = {
+                    active: "false",
+                    productsCount: context.params.productCount,
+                    total: context.params.total,
+                    creatorId: sessionStorage.getItem("id"),
+                    creationDate: getToday()
+                };
+                service.checkoutReceipt(id, data)
+                    .then(function () {
+                        notify.showInfo("Receipt checked out");
+                        service.createReceipt()
+                            .then(function () {
+                                context.redirect("#/home");
+                            }).catch(notify.handleError);
+                    }).catch(notify.handleError);
+            }
+            else{
+                notify.showError("You can't checkout empty receipt!");
+                context.redirect("#/home");
+            }
+        });
+
+        this.get('#/overview', function (context) {
+            service.getMyReceipts()
+                .then(function (data) {
+                    context.receipts = data;
+                    console.log(data);
+                    let allTotal = 0;
+                    for (let obj of data) {
+                        allTotal += Number(obj.total);
+                    }
+                    context.allTotal = allTotal;
+                    context.loadPartials({
+                        header: "./templates/header.hbs",
+                        footer: "./templates/footer.hbs",
+                        receipt: "./templates/allReceiptsReceipt.hbs"
+                    }).then(function () {
+                        this.partial('./templates/allReceipts.hbs')
+                    })
+                }).catch(notify.handleError);
+        });
+
+        this.get('#/details/:id', function (context) {
+            let id = context.params.id.slice(1);
+            service.getReceiptEntries(id)
+                .then(function (res) {
+                    context.entries = res;
+                    context.loadPartials({
+                        header: "./templates/header.hbs",
+                        footer: "./templates/footer.hbs",
+                        entry: "./templates/detailsProduct.hbs"
+                    }).then(function () {
+                        this.partial("./templates/details.hbs")
+                    }).catch(notify.handleError);
+                })
         });
     });
+
     app.run();
 });
 
