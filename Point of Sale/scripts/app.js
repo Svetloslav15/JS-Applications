@@ -35,7 +35,6 @@ $(() => {
             }
             else {
                 notify.showError("Invalid credentials!");
-                context.redirect('#/welcome');
             }
         });
 
@@ -53,7 +52,6 @@ $(() => {
             }
             else {
                 notify.showError("Invalid credentials!");
-                context.redirect('#/welcome');
             }
         });
 
@@ -161,7 +159,6 @@ $(() => {
             }
             else{
                 notify.showError("You can't checkout empty receipt!");
-                context.redirect("#/home");
             }
         });
 

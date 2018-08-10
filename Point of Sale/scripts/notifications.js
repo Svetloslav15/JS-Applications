@@ -1,30 +1,22 @@
-const notify = (() => {
-    $(() => {
-        let loading = 0;
-        $(document).on({
-            ajaxStart: () => {
-                if (!loading) $('#loadingBox').fadeIn();
-                loading++;
-            },
-            ajaxStop: () => setTimeout(() => {
-                loading--;
-                if (!loading) $('#loadingBox').fadeOut();
-            }, 500)
-        });
+let notify = (() => {
 
-        $('#infoBox').click((event) => $(event.target).fadeOut());
-        $('#errorBox').click((event) => $(event.target).fadeOut());
+    $(document).on({
+        ajaxStart: () => $("#loadingBox").show(),
+        ajaxStop: () => $('#loadingBox').fadeOut()
     });
 
     function showInfo(message) {
-        $('#infoBox').find('span').text(message);
-        $('#infoBox').fadeIn();
-        setTimeout(() => $('#infoBox').fadeOut(), 3000);
+        let infoBox = $('#infoBox');
+        infoBox.find('span').text(message);
+        infoBox.fadeIn();
+        setTimeout(() => infoBox.fadeOut(), 3000);
     }
 
     function showError(message) {
-        $('#errorBox').find('span').text(message);
-        $('#errorBox').fadeIn();
+        let errorBox = $('#errorBox');
+        errorBox.find('span').text(message);
+        errorBox.fadeIn();
+        setTimeout(() => errorBox.fadeOut(), 3000);
     }
 
     function handleError(reason) {
@@ -32,6 +24,8 @@ const notify = (() => {
     }
 
     return {
-        showInfo, showError, handleError
+        showInfo,
+        showError,
+        handleError
     }
 })();
