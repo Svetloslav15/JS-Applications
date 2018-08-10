@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Messages</title>
+    <link rel="stylesheet" type="text/css" href="messages.css" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="node_modules/sammy/lib/sammy.js"></script>
+    <script src="node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    <script src="scripts/remote.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/notifications.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/service.js"></script>
+</head>
+
+<body onload="startApp()">
+
+<div id="app">
+    <main>
+        <div id="loadingBox"><span>Loading ...</span></div>
+
+        <div id="infoBox"><span>Info</span></div>
+
+        <div id="errorBox"><span>Error</span></div>
+    </main>
+
+</div>
+
+</body>
+</html>
