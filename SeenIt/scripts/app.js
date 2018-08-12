@@ -132,7 +132,7 @@ $(() => {
         });
 
         this.get('#/edit/post/:id', function (context) {
-            let id = context.params.id.slice(1);
+            let id = context.params.id;
             posts.getPostById(id)
                 .then(function (res) {
                     context.post = res;
@@ -166,7 +166,7 @@ $(() => {
         });
 
         this.get('#/delete/post/:id', function (context) {
-           let id = context.params.id.slice(1);
+           let id = context.params.id;
            posts.deletePostById(id)
                .then(function () {
                    notify.showInfo("Post deleted.");
@@ -202,7 +202,7 @@ $(() => {
         });
 
         this.get('#/details/post/:id', function (context) {
-           let id = context.params.id.slice(1);
+           let id = context.params.id;
             posts.getPostById(id)
                .then(function (post) {
                    context.post = post;
@@ -240,14 +240,13 @@ $(() => {
                 };
                 comments.createComment(object)
                     .then(function (res) {
-                        console.log(res);
                         notify.showInfo("Comment created.");
-                        context.redirect(`#/details/post/:${postId}`);
+                        context.redirect(`#/details/post/${postId}`);
                     }).catch(notify.handleError);
             }
             else{
                 notify.showError("Cannot post empty comment!");
-                context.redirect(`#/details/post/:${postId}`);
+                context.redirect(`#/details/post/${postId}`);
             }
         });
 
@@ -257,7 +256,7 @@ $(() => {
             comments.deleteCommentById(commentId)
                 .then(function () {
                     notify.showInfo("Comment deleted.");
-                    context.redirect(`#/details/post/:${postId}`);
+                    context.redirect(`#/details/post/${postId}`);
                 }).catch(notify.handleError);
         });
     });

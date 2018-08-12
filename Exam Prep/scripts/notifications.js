@@ -24,7 +24,7 @@ const notify = (() => {
 
     function showError(message) {
         $('#errorBox').find('span').text(message);
-        $('#errorBox').fadeIn();
+        $('#errorBox').fadeIn()
     }
 
     function handleError(reason) {
