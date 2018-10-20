@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}

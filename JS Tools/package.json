@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "eslint": "^5.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-eslint": "^21.0.0"
+  }
+}

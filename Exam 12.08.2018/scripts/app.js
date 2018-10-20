@@ -230,7 +230,6 @@ $(() => {
                 .then(function (data) {
                     data.isAuthor = sessionStorage.getItem("username") == data.seller ? true : false;
                     context.car = data;
-                    console.log(data);
                     context.loadPartials({
                         navigation: "./templates/common/navigation.hbs",
                         footer: "./templates/common/footer.hbs"
