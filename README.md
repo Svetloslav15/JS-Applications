@@ -1,5 +1,5 @@
 # JS Applications
-💻 Here are all apps build during the course JavaScript Applications in SoftUni. 
+Here are all apps build during the course JavaScript Applications in SoftUni. 
 ## Course Content
 [01. AJAX and jQuery Ajax](https://github.com/Svetloslav15/JS-Applications/tree/master/01.%20AJAX%20and%20jQuery%20Ajax)</br>
 [02. jQuery AJAX and the Github API](https://github.com/Svetloslav15/JS-Applications/tree/master/02.%20jQuery%20AJAX%20and%20the%20Github%20API)</br>
